@@ -1,6 +1,8 @@
 import { Figtree } from 'next/font/google'
 import './globals.css'
 import NavBar from '@/components/NavBar/desktop'
+import { NavigationEvents } from './nav-events'
+import { Suspense } from 'react'
 
 const figtree = Figtree({ subsets: ['latin'] })
 
@@ -15,6 +17,9 @@ export default function RootLayout({ children }) {
       <body className={figtree.className}>
         <NavBar />
         {children}
+        <Suspense fallback={null}>
+          <NavigationEvents />
+        </Suspense>
         </body>
     </html>
   )

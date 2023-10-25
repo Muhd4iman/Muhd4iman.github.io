@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Home from '@/pages/home/home'
+import Home from './home/home'
 
 export default function index() {
   return (
@@ -110,7 +110,7 @@ export default function index() {
         </a>
       </div>
     </main> */
-    <div className="bg-[#FDF4DC]">
+    <div>
       <Home />
     </div>
   )
