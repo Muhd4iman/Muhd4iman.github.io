@@ -5,8 +5,8 @@ export default function NavBar() {
     const router = useRouter()
 
     return (
-      <>
-      <div className="py-1 px-4 text-right bg-stone-600 text-sky-500">
+      <div className="sticky top-0">
+        <div className="py-1 px-4 text-right bg-stone-600 text-sky-500">
             <ul className="inline-flex text-xl">
                 <li className="px-4 hover:font-bold">BM</li>
                 <li className="px-4 hover:font-bold">ENG</li>
@@ -22,6 +22,6 @@ export default function NavBar() {
                 <button className="px-4 decoration-[3px] hover:font-bold hover:underline hover:decoration-sky-500" onClick={() => router.push('/project')}>Project</button>
             </ul>
         </div>
-      </>
+      </div>
     )
   }
