@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Achievement',
+}
+
 export default function Achievement() {
     return (
       <>

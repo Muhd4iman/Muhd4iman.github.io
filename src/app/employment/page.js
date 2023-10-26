@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Employment',
+}
+
 export default function Employment() {
     return (
       <>

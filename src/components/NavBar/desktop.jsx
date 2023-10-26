@@ -5,11 +5,11 @@ export default function NavBar() {
     const router = useRouter()
 
     return (
-      <div className="sticky top-0">
+      <div className="sticky top-0 z-20">
         <div className="py-1 px-4 text-right bg-stone-600 text-sky-500">
             <ul className="inline-flex text-xl">
-                <li className="px-4 hover:font-bold">BM</li>
-                <li className="px-4 hover:font-bold">ENG</li>
+                <button className="px-4 hover:font-bold">BM</button>
+                <button className="px-4 hover:font-bold">ENG</button>
             </ul>
         </div>
         <div className="p-4 text-right bg-[#FDF4DC]">
