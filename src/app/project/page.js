@@ -24,9 +24,8 @@ export default function Project() {
         <h3 className="font-bold text-xl">4TH SEM</h3>
         <p className="text-lg"></p>
         <br />
-        <h3 className="font-bold text-xl">5TH SEM</h3>
+        <h3 className="font-bold text-xl">5TH SEM (INTERNSHIP)</h3>
         <p className="text-lg"></p>
-        <br />
       </div>
       </>
     )
