@@ -5,7 +5,7 @@ export default function NavBar() {
     const router = useRouter()
 
     return (
-      <div className="sticky top-0">
+      <div className="sticky top-0 z-20">
         <div className="py-1 px-4 text-right bg-stone-600 text-sky-500">
             <ul className="inline-flex text-xl">
                 <li className="px-4 hover:font-bold">BM</li>
