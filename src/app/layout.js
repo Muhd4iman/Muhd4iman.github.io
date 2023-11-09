@@ -3,6 +3,7 @@ import './globals.css'
 import NavBar from '@/components/NavBar/desktop'
 import { NavigationEvents } from './nav-events'
 import { Suspense } from 'react'
+import Loading from './loading'
 
 const figtree = Figtree({ subsets: ['latin'] })
 
@@ -15,10 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={figtree.className}>
-        <NavBar />
-        {children}
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loading />}>
           <NavigationEvents />
+          <NavBar />
+          {children}
         </Suspense>
         </body>
     </html>
